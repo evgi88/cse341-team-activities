@@ -12,4 +12,13 @@ router.get('/',(req, res, next) => {
     });
 });
 
+router.get('/hello',(req, res, next) => {
+    res.render('pages/prove01', { 
+        title: 'Team Activity 02', 
+        path: '/ta02', // For pug, EJS 
+        activeTA03: true, // For HBS
+        contentCSS: true, // For HBS
+    });
+});
+
 module.exports = router;

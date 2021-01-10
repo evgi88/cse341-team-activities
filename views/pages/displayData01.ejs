@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>This page is to display the data from the form</p>
+  </div>
+</div>
+<div class="container displayForm01">
+  <h2>Your name is <%= name %> and your hobby is <%= hobby %>.</h2>
+  <h2>You are a <%= catOrDog %> person.</h2>
+</div>
+
+
+</body>
+</html>

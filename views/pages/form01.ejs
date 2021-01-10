@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>This is the form for Prove 01</p>    
+  </div>
+</div>
+<div class="container">
+  <form action="/prove01" method="POST">
+    <label>Name</label>
+    <input type="text" name="name">
+    <label>Hobby</label>
+    <input type="text" name="hobby"> 
+    <br/>
+    <h4>What type of person are you?</h4>
+    <input type="radio" name="catOrDog" value="cat">
+    <label>Cat</label>
+    <br/>
+    <input type="radio" name="catOrDog" value="dog">
+    <label>Dog</label>
+
+    <br/><br/>
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
