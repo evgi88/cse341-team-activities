@@ -1,7 +1,5 @@
 const express = require('express');
-const fs = require('fs'); // File system for TA01
 const router = express.Router();
-
 
 router.get('/',(req, res, next) => {
     res.render('pages/form01', { 
@@ -13,7 +11,7 @@ router.get('/',(req, res, next) => {
 });
 
 router.post('/',(req, res, next) => {
-    res.render('pages/displayData01', { 
+    res.render('pages/display01', { 
         title: 'Prove 01 - Display Data', 
         path: '/prove01', // For pug, EJS 
         name: req.body.name,

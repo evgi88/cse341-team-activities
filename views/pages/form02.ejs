@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>This is the form for Prove 02</p>    
+  </div>
+</div>
+<div class="container">
+  <form action="/prove02/addBook" method="POST">
+    <label>Name</label>
+    <input type="text" name="bookName">
+    <br/>
+    <label>Author</label>
+    <input type="text" name="bookAuthor">
+    <br/>
+    <label>Summary</label>
+    <input type="text" name="bookSummary"> 
+
+    <br/><br/>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
